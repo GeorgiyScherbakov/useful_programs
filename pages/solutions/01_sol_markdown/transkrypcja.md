@@ -20,9 +20,13 @@ $$\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}
   
   - **stany energetyczne są zdegenerowane**
 
-  - **sferyczna kropka kwantowa $\Rightarrow$ rozłożenie funkcji$\Psi$ na część radialny i kątową (podobieństwo do zagadnienia atomu wodorodu w mechanike kwantowej)
+  - **sferyczna kropka kwantowa $\Rightarrow$ rozłożenie funkcji $\Psi$ na część radialny i kątową (podobieństwo do zagadnienia atomu wodorodu w mechanike kwantowej)
   $\Rightarrow$ rozwiązanie - funkcje Bessela typu $J_{l+1/2}$**
 
 # 12. PORÓWNAĆ WŁASNOŚCI HETEROSTRUKTUR, DRUTÓW I KROPEK KWANTOWYCH.
 
-![wzor](pages/solutions/01_sol_markdown/wykres.png)
+<div align="center">
+  
+![wzor](./wykres.png)
+
+</div>
