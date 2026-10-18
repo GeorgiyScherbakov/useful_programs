@@ -1,12 +1,28 @@
 # Zad. 5
 
+# Transkrypcja
+
+<div align="center">
+  
+![wzor](./zrzut.png).
+
+</div>
+
+## Prompt użyty do wygenerowania tekstu przez AI
+
+```
+Tutaj wklej treść promptu użytego do wygenerowania tekstu przez AI.
+```
+
+## Finalna wersja notatki
+
 # 11. CO TO SĄ KROPKI KWANTOWE I JAKIE MAJĄ WŁASNOŚCI?
 
 - **OD struktura** 
   
 - **ruch elektroniczny ograniczony w trzech wymiarach** 
   
-- **najprosty madeł - quantum box - kropka kwantowa w kształcie, sześcianu, na zewnątrz potencjal nieskończony** 
+- **najprosty modeł - quantum box - kropka kwantowa w kształcie, sześcianu, na zewnątrz potencjal nieskończony** 
   
 - **równanie Schrodingera:** 
   
@@ -22,14 +38,5 @@ $$\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}
   
   - **stany energetyczne są zdegenerowane**
 
-  - **sferyczna kropka kwantowa $\Rightarrow$ rozłożenie funkcji $\Psi$ na część radialny i kątową (podobieństwo do zagadnienia atomu wodorodu w mechanike kwantowej)
+  - **sferyczna kropka kwantowa $\Rightarrow$ rozłożenie funkcji $\Psi$ na część radialny i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej)
   $\Rightarrow$ rozwiązanie - funkcje Bessela typu $J_{l+1/2}$**
-
-# 12. PORÓWNAĆ WŁASNOŚCI HETEROSTRUKTUR, DRUTÓW I KROPEK KWANTOWYCH.
-
-<div align="center">
-  
-![wzor](./wykres.png)
-
-</div>
-
