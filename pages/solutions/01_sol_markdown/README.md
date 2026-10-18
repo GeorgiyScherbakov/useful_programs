@@ -10,10 +10,10 @@
 - maslo
 
 **listę numerowaną:**
-- 1.Warszawa
-- 2.Kraków
-- 3.Lódż
-- 4.Wroclaw
+1. Warszawa
+2. Kraków
+3. Lódż
+4. Wroclaw
 
 **checklistę:**
 - [ ] Obowiązkowo zalicz. 2 sem. z WF
@@ -29,5 +29,26 @@
 **link do strony Google Colab:** [http://colab.research.google.com](http://colab.research.google.com),
 
 **krótki fragment kodu Pythona:**
-```python
+```python```
 print("Hello, World!")
+
+**trzy wzory matematyczne w tekście**
+$$
+x∈R,  α+β=γ,  x∈Z
+$$
+
+**trzy wzory jako osobny wycentrowany blok**
+
+$$E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} = \frac{n_z^2}{L_z^2} \right)$$
+
+$$\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi(x,y,z) = E \psi(x,y,z)$$
+
+$$F =  ma$$
+
+**obrazek 'wykres.png**
+
+<div align="center">
+  
+![wzor](./wykres.png).
+
+</div>
