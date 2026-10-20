@@ -40,11 +40,17 @@ $x \in R$, $\alpha + \beta = \gamma$, $x \in Z$
 
 Trzy wzory jako osobny wycentrowany blok:
 
-$$E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} = \frac{n_z^2}{L_z^2} \right)$$
+$$
+E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} = \frac{n_z^2}{L_z^2} \right)
+$$
 
-$$\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi(x,y,z) = E \psi(x,y,z)$$
+$$
+\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi(x,y,z) = E \psi(x,y,z)
+$$
 
-$$F = ma$$
+$$
+F = ma
+$$
 
 Obrazek 'wykres.png':
 
