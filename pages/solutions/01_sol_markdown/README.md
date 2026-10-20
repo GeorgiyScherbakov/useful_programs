@@ -39,17 +39,16 @@ Trzy wzory matematyczne w tekście:
 $x \in R$, $\alpha + \beta = \gamma$, $x \in Z$
 
 Trzy wzory jako osobny wycentrowany blok:
-
 $$
-E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} = \frac{n_z^2}{L_z^2} \right)
-$$
-
-$$
-\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi(x,y,z) = E \psi(x,y,z)
+E = mc^2
 $$
 
 $$
-F = ma
+a^2 + b^2 = c^2
+$$
+
+$$
+\int_0^1 x^2 \, dx = \frac{1}{3}
 $$
 
 Obrazek 'wykres.png':
