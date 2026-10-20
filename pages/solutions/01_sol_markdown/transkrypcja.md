@@ -25,16 +25,20 @@ Tutaj wklej treść promptu użytego do wygenerowania tekstu przez AI.
 - **najprosty modeł - quantum box - kropka kwantowa w kształcie, sześcianu, na zewnątrz potencjal nieskończony** 
   
 - **równanie Schrodingera:** 
-  
-$$\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi(x,y,z) = E \psi(x,y,z)$$
+
+$$
+\frac{-\hbar^2}{2m} \left( \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2} + \frac{\partial^2}{\partial z^2} \right) \psi(x,y,z) = E \psi(x,y,z)
+$$
 
 - **energia:**
 
 <div aligh="center">
   
-  $$E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} = \frac{n_z^2}{L_z^2} \right)$$
+  $$
+  E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} + \frac{n_z^2}{L_z^2} \right)
+  $$
 
-  </div>
+</div>
   
   - **stany energetyczne są zdegenerowane**
 
