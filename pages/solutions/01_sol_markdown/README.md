@@ -39,6 +39,7 @@ Trzy wzory matematyczne w tekście:
 $x \in R$, $\alpha + \beta = \gamma$, $x \in Z$
 
 Trzy wzory jako osobny wycentrowany blok:
+
 $$
 E = mc^2
 $$
