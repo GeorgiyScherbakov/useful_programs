@@ -23,27 +23,27 @@ W modelu idealnym jedyną siłą działającą na ciało w trakcie lotu jest si�
 ### 2.1 Wyprowadzenie równań ruchu
 
 Rozkładając przyspieszenie na składowe:
-$$ a_x = 0 $$
-$$ a_y = -g $$
+$a_x = 0$
+$a_y = -g$
 
 Całkując przyspieszenie po czasie, otrzymujemy prędkość. Stałe całkowania wynikają z rozkładu wektora prędkości początkowej $v_0$ na składowe: $v_{0x} = v_0 \cos(\alpha)$ oraz $v_{0y} = v_0 \sin(\alpha)$.
-$$ v_x(t) = \int a_x \, dt = v_0 \cos(\alpha) $$
-$$ v_y(t) = \int a_y \, dt = v_0 \sin(\alpha) - gt $$
+$$v_x(t) = \int a_x \, dt = v_0 \cos(\alpha)$$
+$$v_y(t) = \int a_y \, dt = v_0 \sin(\alpha) - gt$$
 
 Kolejne całkowanie po czasie pozwala wyznaczyć równania toru (zakładamy położenie początkowe $x_0 = 0$, $y_0 = 0$):
-$$ x(t) = \int v_x(t) \, dt = v_0 \cos(\alpha) t $$
-$$ y(t) = \int v_y(t) \, dt = v_0 \sin(\alpha) t - \frac{1}{2}gt^2 $$
+$$x(t) = \int v_x(t) \, dt = v_0 \cos(\alpha) t$$
+$$y(t) = \int v_y(t) \, dt = v_0 \sin(\alpha) t - \frac{1}{2}gt^2$$
 
 ### 2.2 Zasięg i maksymalna wysokość
 
 Czas lotu $t_c$ wyznaczamy, przyrównując wysokość do zera ($y(t_c) = 0$ dla $t > 0$):
-$$ v_0 \sin(\alpha) t_c - \frac{1}{2}gt_c^2 = 0 \implies t_c = \frac{2v_0 \sin(\alpha)}{g} $$
+$$v_0 \sin(\alpha) t_c - \frac{1}{2}gt_c^2 = 0 \implies t_c = \frac{2v_0 \sin(\alpha)}{g}$$
 
 Maksymalna wysokość ($H_{max}$) jest osiągana dla $t_h = \frac{t_c}{2}$:
-$$ H_{max} = y(t_h) = \frac{v_0^2 \sin^2(\alpha)}{2g} $$
+$$H_{max} = y(t_h) = \frac{v_0^2 \sin^2(\alpha)}{2g}$$
 
 Zasięg całkowity ($Z$):
-$$ Z = x(t_c) = \frac{v_0^2 \sin(2\alpha)}{g} $$
+$$Z = x(t_c) = \frac{v_0^2 \sin(2\alpha)}{g}$$
 
 ---
 
@@ -56,18 +56,18 @@ Dla ciał poruszających się z niewielkimi prędkościami często przyjmuje si�
 Druga zasada dynamiki przyjmuje postać: $m\vec{a} = \vec{Q} + \vec{F}_o$.
 
 Rozkładając to na osie:
-$$ m \frac{dv_x}{dt} = -k v_x $$
-$$ m \frac{dv_y}{dt} = -mg - k v_y $$
+$$m \frac{dv_x}{dt} = -k v_x$$
+$$m \frac{dv_y}{dt} = -mg - k v_y$$
 
 ### 3.2 Rozwiązanie analityczne
 
 Rozwiązując powyższe równania różniczkowe z uwzględnieniem warunków początkowych, otrzymujemy składowe prędkości:
-$$ v_x(t) = v_0 \cos(\alpha) \cdot e^{-\frac{k}{m}t} $$
-$$ v_y(t) = \left( v_0 \sin(\alpha) + \frac{mg}{k} \right) e^{-\frac{k}{m}t} - \frac{mg}{k} $$
+$$v_x(t) = v_0 \cos(\alpha) \cdot e^{-\frac{k}{m}t}$$
+$$v_y(t) = \left( v_0 \sin(\alpha) + \frac{mg}{k} \right) e^{-\frac{k}{m}t} - \frac{mg}{k}$$
 
 Po scałkowaniu tych prędkości, otrzymujemy równania położenia:
-$$ x(t) = \frac{m \cdot v_0 \cos(\alpha)}{k} \left( 1 - e^{-\frac{k}{m}t} \right) $$
-$$ y(t) = \frac{m}{k} \left( v_0 \sin(\alpha) + \frac{mg}{k} \right) \left( 1 - e^{-\frac{k}{m}t} \right) - \frac{mg}{k}t $$
+$$x(t) = \frac{m \cdot v_0 \cos(\alpha)}{k} \left( 1 - e^{-\frac{k}{m}t} \right)$$
+$$y(t) = \frac{m}{k} \left( v_0 \sin(\alpha) + \frac{mg}{k} \right) \left( 1 - e^{-\frac{k}{m}t} \right) - \frac{mg}{k}t$$
 
 Ze względu na człon wykładniczy, zasięg rzutu z oporem powietrza jest zawsze mniejszy niż w modelu idealnym, a trajektoria staje się niesymetryczna (kąt upadku jest większy niż kąt rzutu).
 
