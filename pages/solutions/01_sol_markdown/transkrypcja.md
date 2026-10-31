@@ -40,5 +40,5 @@ $$
 </div>
   
   * stany energetyczne są zdegenerowane
-* sferyczna kropka kwantowa $\Rightarrow$ rozłożenie funkcji $\Psi$ na część radialny i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej)
+* sferyczna kropka kwantowa $\Rightarrow$ rozłożenie funkcji $\Psi$ na część radialną i kątową (podobieństwo do zagadnienia atomu wodoru w mechanice kwantowej)
   $\Rightarrow$ rozwiązanie - funkcje Bessela typu $J_{l+1/2}$
