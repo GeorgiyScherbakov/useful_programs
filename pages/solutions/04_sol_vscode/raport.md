@@ -6,11 +6,11 @@ Celem niniejszego raportu jest analiza i porównanie kinematyki oraz dynamiki pu
 1. W próżni (bez oporu powietrza).
 2. W ośrodku stawiającym opór (z uwzględnieniem oporu powietrza).
 
-* **Prędkość początkowa ($v_0$):** $36 \text{ m/s}$ (dwie pierwsze cyfry)
+* **Prędkość początkowa ($v_0$):** $36 \mathrm{ m/s}$ (dwie pierwsze cyfry)
 * **Kąt początkowy ($\alpha$):** $39^\circ$ (dwie ostatnie cyfry)
-* **Przyspieszenie ziemskie ($g$):** $9.81 \text{ m/s}^2$
-* **Masa ciała ($m$):** $1.0 \text{ kg}$
-* **Współczynnik oporu powietrza ($k$):** $0.1 \text{ kg/s}$ (dla modelu liniowego)
+* **Przyspieszenie ziemskie ($g$):** $9.81 \mathrm{ m/s}^2$
+* **Masa ciała ($m$):** $1.0 \mathrm{ kg}$
+* **Współczynnik oporu powietrza ($k$):** $0.1 \mathrm{ kg/s}$ (dla modelu liniowego)
 
 Wszystkie obliczenia przeprowadzono w układzie jednostek SI.
 
@@ -23,26 +23,34 @@ W modelu idealnym jedyną siłą działającą na ciało w trakcie lotu jest si�
 ### 2.1 Wyprowadzenie równań ruchu
 
 Rozkładając przyspieszenie na składowe:
-$a_x = 0$
-$a_y = -g$
+
+$$a_x = 0$$
+$$a_y = -g$$
 
 Całkując przyspieszenie po czasie, otrzymujemy prędkość. Stałe całkowania wynikają z rozkładu wektora prędkości początkowej $v_0$ na składowe: $v_{0x} = v_0 \cos(\alpha)$ oraz $v_{0y} = v_0 \sin(\alpha)$.
+
 $$v_x(t) = \int a_x \, dt = v_0 \cos(\alpha)$$
+
 $$v_y(t) = \int a_y \, dt = v_0 \sin(\alpha) - gt$$
 
 Kolejne całkowanie po czasie pozwala wyznaczyć równania toru (zakładamy położenie początkowe $x_0 = 0$, $y_0 = 0$):
+
 $$x(t) = \int v_x(t) \, dt = v_0 \cos(\alpha) t$$
+
 $$y(t) = \int v_y(t) \, dt = v_0 \sin(\alpha) t - \frac{1}{2}gt^2$$
 
 ### 2.2 Zasięg i maksymalna wysokość
 
 Czas lotu $t_c$ wyznaczamy, przyrównując wysokość do zera ($y(t_c) = 0$ dla $t > 0$):
+
 $$v_0 \sin(\alpha) t_c - \frac{1}{2}gt_c^2 = 0 \implies t_c = \frac{2v_0 \sin(\alpha)}{g}$$
 
 Maksymalna wysokość ($H_{max}$) jest osiągana dla $t_h = \frac{t_c}{2}$:
+
 $$H_{max} = y(t_h) = \frac{v_0^2 \sin^2(\alpha)}{2g}$$
 
 Zasięg całkowity ($Z$):
+
 $$Z = x(t_c) = \frac{v_0^2 \sin(2\alpha)}{g}$$
 
 ---
@@ -56,17 +64,23 @@ Dla ciał poruszających się z niewielkimi prędkościami często przyjmuje si�
 Druga zasada dynamiki przyjmuje postać: $m\vec{a} = \vec{Q} + \vec{F}_o$.
 
 Rozkładając to na osie:
+
 $$m \frac{dv_x}{dt} = -k v_x$$
+
 $$m \frac{dv_y}{dt} = -mg - k v_y$$
 
 ### 3.2 Rozwiązanie analityczne
 
 Rozwiązując powyższe równania różniczkowe z uwzględnieniem warunków początkowych, otrzymujemy składowe prędkości:
+
 $$v_x(t) = v_0 \cos(\alpha) \cdot e^{-\frac{k}{m}t}$$
+
 $$v_y(t) = \left( v_0 \sin(\alpha) + \frac{mg}{k} \right) e^{-\frac{k}{m}t} - \frac{mg}{k}$$
 
 Po scałkowaniu tych prędkości, otrzymujemy równania położenia:
+
 $$x(t) = \frac{m \cdot v_0 \cos(\alpha)}{k} \left( 1 - e^{-\frac{k}{m}t} \right)$$
+
 $$y(t) = \frac{m}{k} \left( v_0 \sin(\alpha) + \frac{mg}{k} \right) \left( 1 - e^{-\frac{k}{m}t} \right) - \frac{mg}{k}t$$
 
 Ze względu na człon wykładniczy, zasięg rzutu z oporem powietrza jest zawsze mniejszy niż w modelu idealnym, a trajektoria staje się niesymetryczna (kąt upadku jest większy niż kąt rzutu).
@@ -124,17 +138,17 @@ v_tot_drag = np.sqrt(vx_drag**2 + vy_drag**2)
 # 4. Generowanie wykresów
 plt.style.use('seaborn-v0_8-darkgrid')
 
-# Wyrkes 1: Trajektoria ruchu
+# Wykres 1: Trajektoria ruchu
 plt.figure(figsize=(10, 6))
 plt.plot(x_ideal, y_ideal, label='Bez oporu powietrza', linestyle='--', color='blue')
 plt.plot(x_drag, y_drag, label='Z oporem powietrza (liniowy)', color='red')
-plt.title(f'Trajektoria rzutu ukośnego ($v_0={v0}$ m/s, $\\alpha={alpha_deg}^\circ$)')
+plt.title(r'Trajektoria rzutu ukośnego ($v_0=' + str(v0) + r'$ m/s, $\alpha=' + str(alpha_deg) + r'^\circ$)')
 plt.xlabel('Odległość x [m]')
 plt.ylabel('Wysokość y [m]')
 plt.legend()
 plt.tight_layout()
 plt.savefig('wykres_trajektoria.png', dpi=300)
-plt.close()
+plt.show()  # Wyświetlenie wykresu w Colab
 
 # Wykres 2: Współrzędne w czasie
 plt.figure(figsize=(12, 5))
@@ -155,7 +169,7 @@ plt.ylabel('Wysokość y [m]')
 plt.legend()
 plt.tight_layout()
 plt.savefig('wykres_polozenie_czas.png', dpi=300)
-plt.close()
+plt.show()  # Wyświetlenie wykresu w Colab
 
 # Wykres 3: Składowe prędkości w czasie (z oporem)
 plt.figure(figsize=(10, 6))
@@ -169,7 +183,7 @@ plt.ylabel('Prędkość [m/s]')
 plt.legend()
 plt.tight_layout()
 plt.savefig('wykres_predkosci.png', dpi=300)
-plt.close()
+plt.show()  # Wyświetlenie wykresu w Colab
 
 print("Wygenerowano pomyślnie wykresy: wykres_trajektoria.png, wykres_polozenie_czas.png, wykres_predkosci.png")
 ```
@@ -186,7 +200,7 @@ Na poniższym wykresie zestawiono trajektorię idealną (parabola) z trajektori�
 
 ![Trajektoria ruchu](wykres_trajektoria.png)
 
-**Wnioski:** Jak widać, dla parametrów $v_0 = 36 \text{ m/s}$ i $\alpha = 39^\circ$ zasięg rzutu jest wyraźnie zredukowany przez opór powietrza. Ponadto krzywa z oporem traci asymetrię — zbocze opadania jest znacznie bardziej strome. Ciało nie dolatuje na odległość teoretyczną wynoszącą ok. $129 \text{ m}$, spadając znacznie bliżej punktu startowego w porównaniu do próżni.
+**Wnioski:** Jak widać, dla parametrów $v_0 = 36 \mathrm{ m/s}$ i $\alpha = 39^\circ$ zasięg rzutu jest wyraźnie zredukowany przez opór powietrza. Ponadto krzywa z oporem traci asymetrię — zbocze opadania jest znacznie bardziej strome. Ciało nie dolatuje na odległość teoretyczną wynoszącą ok. $129 \mathrm{ m}$, spadając znacznie bliżej punktu startowego w porównaniu do próżni.
 
 ### 5.2 Zależności położenia od czasu $x(t)$ oraz $y(t)$
 
