@@ -39,7 +39,7 @@ v_x(t) = \int a_x \, dt = v_0 \cos(\alpha)
 $$
 
 $$
-v_(t) = \int a_y \, dt = v_0 \sin(\alpha) - gt
+v_y(t) = \int a_y \, dt = v_0 \sin(\alpha) - gt
 $$
 
 Kolejne całkowanie po czasie pozwala wyznaczyć równania toru (zakładamy położenie początkowe $x_0 = 0$, $y_0 = 0$):
