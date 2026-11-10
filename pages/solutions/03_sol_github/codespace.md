@@ -6,6 +6,6 @@
 5. Miyamoto Musashi
 6. Akira
 7. Tomo-chan
-8. Gats
+8. Guts
 9. Thorkell the Tall
 10. Ghost Rider
